@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Apni Gaddi</string>
+    <string name="title_activity_rider_screen">Map</string>
+    <string name="title_activity_pillion_screen">Map</string>
+</resources>

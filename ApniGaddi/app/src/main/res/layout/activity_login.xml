@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/ebrima"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/sideicon" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/header"
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:id="@+id/logologin"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/logologin"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:hint="EMAIL"
+            android:id="@+id/loginemail"
+            android:fontFamily="@font/ebrima"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:background="@drawable/rename"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/password"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:hint="PASSWORD"
+                android:fontFamily="@font/ebrima"
+                android:textSize="15dp"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:id="@+id/loginpass"
+                android:gravity="center"
+                android:background="@drawable/rename"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="220dp"
+            android:id="@+id/login"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lb"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ? "
+                android:fontFamily="@font/ebrima"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                android:fontFamily="@font/ebrima"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>
